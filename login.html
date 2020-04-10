@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <script src="https://kit.fontawesome.com/223ccb16b7.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160101347-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160101347-1');
+    </script>
+
+    <title>Acesso do cliente</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html">
+            <img class="header_logo" src="./assets/images/logos/LOGO_SOMAR_(PRINCIPAL).png" alt="Somar Rastreamento">
+        </a>
+        <div id="contact" class="row align-items-center">
+            <div class="text-center">
+                <h2> Precisa de ajuda?</h2>
+                <h5>Entre em contato conosco (55) 3430-1175</h5>
+                <h5> ou WhatsApp para (55) 99916-9725</h5>
+            </div>
+            <img id="contact_icon" src="./assets/icons/contact-us.svg" width="75px" height="75px" alt="">
+        </div>
+    </header>
+    <section class="pricing">
+        <div class="container">
+            <h2 class="heading mb-3"> Acesse a sua plataforma, e veja onde estão seus veículos.</h2>
+            <div class="row align-items-center justify-content-center">
+                <!-- SSX TRACKING LOGIN -->
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Cliente Tracking</h5>
+                            <div class="card_logo">
+                                <img src="./assets/images/ssxtracking.webp" alt="SSX Tracking">
+                            </div>
+                            <hr>
+                            <form action="http://tracking.systemsatx.com.br/Login/LoginExterno" method="post">
+                                <div class="form-label-group">
+                                    <input type="email" id="inputEmailTracking" name="login" class="form-control"
+                                        placeholder="Email address" required>
+                                    <label for="inputEmailTracking">Endereço de email</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="inputPasswordTracking" name="senha" class="form-control"
+                                        placeholder="Password" required>
+                                    <label for="inputPasswordTracking">Senha</label>
+                                </div>
+
+                                <!-- Retorna para o seu site em caso de falha no acesso -->
+                                <input type="hidden" name="backURL" value="http://www.somarrastreamento.com.br">
+                                <!-- Código de identificação do cliente junto a Systemsat -->
+                                <input type="hidden" name="hashCode" value="8069955316900681047">
+                                <button
+                                    class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                    type="submit">Acessar</button>
+                                <div class="text-center">
+                                    <a href="https://play.google.com/store/apps/details?id=br.com.systemsat.tracking">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        Aplicativo para celular Android
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- SSX FAMILY LOGIN -->
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Cliente FAMILY</h5>
+                            <div class="card_logo">
+                                <img src="./assets/images/ssx family.webp" alt="SSX Tracking">
+                            </div>
+                            <hr>
+                            <form action="http://family.systemsatx.com.br/Login/LoginExterno" method="post">
+                                <div class="form-label-group">
+                                    <input type="email" name="login" id="inputEmailFamily" class="form-control"
+                                        placeholder="Email address" required>
+                                    <label for="inputEmailFamily">Endereço de email</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" name="senha" id="inputPasswordFamily" class="form-control"
+                                        placeholder="Password" required>
+                                    <label for="inputPasswordFamily">Senha</label>
+                                </div>
+
+                                <!-- Retorna para o seu site em caso de falha no acesso -->
+                                <input type="hidden" name="backURL" value="http://127.0.0.1:5500/login.html"
+                                    onload="CapturaParametrosUrl()">
+                                <!-- Código de identificação do cliente junto a Systemsat -->
+                                <input type="hidden" name="hashCode" value="8069955316900681047">
+
+                                <button
+                                    class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                    type="submit">Acessar</button>
+                                <div class="text-center">
+                                    <a href="https://play.google.com/store/apps/details?id=br.com.systemsat.family">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        Aplicativo para celular Android
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- SSX GLOBAL WEB LOGIN -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Cliente GLOBAL</h5>
+                            <div class="card_logo">
+                                <img src="./assets/images/ssx-lite3.png" alt="globalsearch">
+                            </div>
+                            <hr>
+                            <form id="form1" name="form1"
+                                action="http://www.globalsearch.com.br/logistica/LoginExterno.aspx?emp=162100"
+                                method="post">
+                                <div class="form-label-group">
+                                    <input type="text" name="txtLogin" id="inputEmailGlobal" class="form-control"
+                                        placeholder="Email address" required>
+                                    <label for="inputEmailGlobal">Login</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" name="txtSenha" id="inputPasswordGlobal" class="form-control"
+                                        placeholder="Password" required>
+                                    <label for="inputPasswordGlobal">Senha</label>
+                                </div>
+
+
+                                <input type="hidden"
+                                    value="http://www.somarrastreamento.com.br/index.php/area-do-cliente"
+                                    name="BackUrl">
+
+                                <button
+                                    class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                    type="submit">Acessar</button>
+                                <div class="text-center">
+                                    <a class="link_apps"
+                                        href="https://play.google.com/store/apps/details?id=systemsat.com.br.gsmob">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        Aplicativo para celular Android
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer_login" class="py-4 text-white-50">
+        <small class="row justify-content-center align-items-center">
+            Copyright &copy; Somar Rastreamento Veicular
+        </small>
+    </footer>
+    <!-- loader -->
+    <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#1d82ff" /></svg>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        window.onload = CapturaParametrosUrl();
+        function CapturaParametrosUrl() {
+
+            //captura a url da página
+            var url = window.location.href;
+            //tenta localizar o ?
+            var res = url.split('error');
+
+            if (res[1] === '=LoginSenhaInvalido') {
+                //tenta localizar os & (pode haver mais de 1)
+                var parametros = res[1].split('&');
+                alert('Problema no login, por favor, verifique seus dados e tente novamente. Caso o erro persista entre em contato conosco');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

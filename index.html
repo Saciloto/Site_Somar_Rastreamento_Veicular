@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+
+    <script src="https://kit.fontawesome.com/223ccb16b7.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160101347-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160101347-1');
+    </script>
+
+    <title>Somar Rastreamento Veicular</title>
+</head>
+
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+    <nav class="navbar navbar-expand-lg navbar-light pb_navbar pb_scrolled-light" id="pb-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/logos/LOGO_SOMAR_(PRINCIPAL).png" width="auto" height="80vh" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i class="ion-navicon"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="probootstrap-navbar">
+                <ul class="navbar-nav ml-auto">
+                    <a href="https://wa.me/5555999169725?text=Olá" target="_blank" class="nav-link" id="whats_link">
+                        <img src="./assets/icons/1051272.svg" width="35px" height="35px"
+                            alt="Enviar mensgem via WhatsApp" style="margin-right: 10px;">(55)99916-9725
+                    </a>
+                    <li class="nav-item"><a class="nav-link" href="#section-home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-features">Vantagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-reviews">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-pricing">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-faq">Ajuda</a></li>
+                    <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0">
+                        <a id="show_button" class="nav-link btn btn-success btn-lg pb_btn-pill" href="./login.html">
+                            <span class="text-white" style="background:none;">Área do Cliente</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <section
+        class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light"
+        id="section-home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center" id="background_img">
+                <div class="col-md-6">
+                    <h2 class="heading mb-3">O controle e segurança ideal</h2>
+                    <div class="sub-heading">
+                        <p class="mb-4">Trabalhamos com opções robustas e eficientes. Contamos com a melhor tecnologia
+                            desenvolvida, com foco em segurança e telemetria. Possuímos acesso ilimitado ao software,
+                            aplicativos para celulares smartphones e assistência rápida e eficiente.
+                        </p>
+                        <div class="row">
+                            <p class="mb-5"><a class="btn btn-success btn-lg pb_btn-pill smoothscroll"
+                                    href="#section-pricing"><span
+                                        class="pb_font-14 text-uppercase pb_letter-spacing-1">Nossos
+                                        Planos</span></a></p>
+                            <p class="mb-5"><a class="btn btn-success btn-lg pb_btn-pill smoothscroll"
+                                    href="#section_contact"><span
+                                        class="pb_font-14 text-uppercase pb_letter-spacing-1">Contato</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Alertas temporários -->
+                    <div id="alert_corona" class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Atenção!</strong> Seguindo as recomendações das autoridades, informamos que estamos
+                        operando em regime de home-office, mas SEGUIMOS NORMALMENTE COM TODAS NOSSAS ATIVIDADES!
+                        <hr>
+                        Você pode ficar tranquilo, porque se precisar de nossos serviços basta acessar nossos canais
+                        digitais para realizar suas solicitações. (WhatsApp, E-mail, Facebook). Tudo para você
+                        resolver tudo sem precisar sair de casa.
+                        <hr>
+                        <p class="text-right">
+                            Somar Rastreamento Veicular
+                        </p>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-features">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 text-center mb-5">
+                    <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+                        <strong>Vantagens</strong></h5>
+                    <h2>O que você irá ganhar</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-center">
+                        <div class="pb_icon">
+                            <img src="./assets/icons/081-placeholder-8.svg">
+                        </div>
+                        <div class="media-body">
+                            <p class="text-sans-serif text-left">Localização por satélite com precisão de até 1 metro, e
+                                informações
+                                onde quer que esteja.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-center">
+                        <div class="pb_icon">
+                            <img src="./assets/icons/south-america.svg">
+                        </div>
+                        <div class="media-body">
+                            <p class="text-sans-serif text-left">Abrangência mercosul, funciona em todos países
+                                integrantes do bloco. Soluções para: Carros, Caminhões, Motos, Máquinas, objetos e até
+                                pessoas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-center">
+                        <div class="pb_icon">
+                            <img src="./assets/icons/dashboard.svg">
+                        </div>
+                        <div class="media-body">
+                            <p class="text-sans-serif text-left">Controle de velocidades e condução perigosa, com
+                                alertas e sinais
+                                sonoros de execesso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-center">
+                        <div class="pb_icon">
+                            <img src="./assets/icons/location.svg">
+                        </div>
+                        <div class="media-body">
+                            <p class="text-sans-serif text-left">Visualização de trajetos e rotas percorridas no mapa,
+                                com informações detalhadas e opções variadas de filtros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-center">
+                        <div class="pb_icon">
+                            <img src="./assets/icons/medal.svg">
+                        </div>
+                        <div class="media-body">
+                            <p class="text-sans-serif text-left">Todos os nossos equipamentos são produzidos com
+                                tecnologia de ponta e homologados pela Anatel, proporcionando mais segurança, confiança
+                                e melhor funcionalidade
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md- col-sm-6">
+                    <div class="media d-block pb_feature-v1 text-center">
+                        <div class="pb_icon">
+                            <img src="./assets/icons/042-computer-3.svg">
+                        </div>
+                        <div class="media-body">
+                            <p class="text-sans-serif text-left">Acompanhe simultâneamente a localização atualizada de
+                                todos os seus veículos em um único dashboard completo, classifique por cores melhorando
+                                a organização da sua frota.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <!-- Section sobre aplicativo web -->
+    <section class="pb_section pb_slant-light">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex col-lg-3 mb-4 justify-content-center align-items-center">
+                    <img src="assets/images/computer_2.png" alt="Image software" class="img-fluid">
+                </div>
+                <div class="col-lg-9 pl-md-6 pl-sm-0">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Software completo e robusto</h2>
+                            <p class="pb_font-20">Trabalhamos com uma plataforma completa, capaz de atender todos os
+                                segmentos de clientes e se adequar as necessiades de cada um.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg">
+
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                                    <img src="./assets/icons/diagnostic.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Software com telemtria</h3>
+                                    <p class="text-sans-serif pb_font-16">Obtenha todas as informações
+                                        importantes, como telemetria avançada com sensores de temperatura,
+                                        RPM, Velocidade, borta de baú, etc. Tudo em seu dashboard.</p>
+                                </div>
+                            </div>
+
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                                    <img src="./assets/icons/google-maps.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">O melhor mapa para todos</h3>
+                                    <p class="text-sans-serif pb_font-16">Disponibilizamos para todos nossos clientes
+                                        a utilização do Google Maps para visualização de seus veículos.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg">
+
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                                    <img src="./assets/icons/security.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Sistema com segurança, através de login e senha</h3>
+                                    <p class="text-sans-serif pb_font-16">Mantenha a segurança dos seus dados, com
+                                        informações seguras através de sistema de login pessoal para cada usuário,
+                                        sem limitações de uso</p>
+                                </div>
+                            </div>
+
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                                    <img src="./assets/icons/modules.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Sistema modular</h3>
+                                    <p class="text-sans-serif pb_font-16">Sistema desenvolvido por módulos,
+                                        capaz de se adequar as necessidas do cliente, focando nas informações
+                                        que são releventes para seu negócio.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <!-- Section sobre aplicativo mobile -->
+    <section class="pb_section bg-light pb_slant-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 order-2">
+                    <img src="assets/images/phone_3.png" alt="Image placeholder" class="img-fluid">
+                </div>
+                <div class="col-lg-8 pr-md-5 pr-sm-0 order-1  mb-5">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Aplicativo funcional</h2>
+                            <p class="pb_font-20">Possibilitamos que nossos clientes obtenham as principais informações
+                                da plataforma em qualquer smartphone, seja Android ou iOS especialmente desenvolvido pra
+                                quem
+                                precisa gerenciar sua frota, mas está sempre se deslocando.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg">
+
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                                    <img src="./assets/icons/1740742.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Histórico onde você estiver</h3>
+                                    <p class="text-sans-serif pb_font-16">Visualizar histórico do veículo no mapa
+                                        Google, com opções de alterar a
+                                        visualização do jeito que desejar.</p>
+                                </div>
+                            </div>
+
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                                    <img src="./assets/icons/2166713.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Filtros de informações</h3>
+                                    <p class="text-sans-serif pb_font-16">Ver todos os veículos de sua frota filtrados
+                                        por atualizados e desatualizados
+                                        ou até visualizar todos os veículos filtrados por um determinado alerta</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg">
+
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                                    <img src="./assets/icons/maps-and-location.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Roteirização</h3>
+                                    <p class="text-sans-serif pb_font-16">A partir do aplicativo, você será capaz, de
+                                        gerar uma rota, diretamente para seu veículo,
+                                        atráves de aplicativos de navegação como Google Maps ou Waze.</p>
+                                </div>
+                            </div>
+
+                            <div class="media pb_feature-v2 text-left mb-1 mt-5">
+                                <div class="pb_icon d-flex mr-3 align-self-start pb_w-15">
+                                    <img src="./assets/icons/phone.svg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="mt-2 mb-2 heading">Visualização completa</h3>
+                                    <p class="text-sans-serif pb_font-16">Visualizar seus veículos no mapa, com detalhes
+                                        da posição e principais
+                                        informações de telemetria.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <section class="pb_section pb_slant-light pb_pb-220" id="section-reviews">
+        <div class="container">
+            <div class="row justify-content-center mb-1">
+                <div class="col-md-6 text-center mb-5">
+                    <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+                        <strong>Clientes</strong></h5>
+                    <h2>Alguns de nossos clientes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="pb_slide_testimonial_sync_v1">
+                        <div class="pb_slider_content js-pb_slider_content2">
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                <h3 class="heading">Pitangueira</h3>
+                                <span class="subheading">Itaqui- RS</span>
+                            </div>
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+
+                                <h3 class="heading">Pirahy Alimentos</h3>
+                                <span class="subheading">São Borja- RS</span>
+                            </div>
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+
+                                <h3 class="heading">Sobradinho Agrobusiness</h3>
+                                <span class="subheading">Maçambara-RS</span>
+                            </div>
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                <h3 class="heading">Alvorada Sistemas Agrícolas</h3>
+                                <span class="subheading">Região Oeste e Sul do RS</span>
+                            </div>
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                <h3 class="heading">Guasso Supermercados</h3>
+                                <span class="subheading">Santiago- RS</span>
+                            </div>
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                <h3 class="heading">Super Safra Comercial Agrícola</h3>
+                                <span class="subheading">São Luiz Gonzaga- RS</span>
+                            </div>
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                <h3 class="heading">Madeireira Chapecó</h3>
+                                <span class="subheading">São Borja- RS</span>
+                            </div>
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                <h3 class="heading">Camil Alimentos</h3>
+                                <span class="subheading">Região Oeste do RS</span>
+                            </div>
+                            <div class="media d-block text-center testimonial_v1 pb_quote_v2">
+                                <h3 class="heading">Barraca Missões</h3>
+                                <span class="subheading">Bossoroca- RS</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <div class="pb_slider_nav js-pb_slider_nav2">
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle"
+                                            src="assets/images/empresas/pitangueira.jpg"
+                                            alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="assets/images/empresas/pirahy.jpg"
+                                            alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle"
+                                            src="assets/images/empresas/sobradinho.jpg" alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="assets/images/empresas/alvorada.png"
+                                            alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle"
+                                            src="assets/images/empresas/guasso-supermercados.png"
+                                            alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle"
+                                            src="assets/images/empresas/supersafra.png" alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="assets/images/empresas/chapeco.jpg"
+                                            alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="assets/images/empresas/camil.png"
+                                            alt="Generic placeholder image">
+                                    </div>
+                                    <div class="author">
+                                        <img class="img-fluid rounded-circle" src="assets/images/empresas/barraca.jpg"
+                                            alt="Generic placeholder image">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END sync_v1 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <section class="pb_section bg-light pb_slant-white" id="section-pricing">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 text-center mb-5">
+                    <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+                        <strong>Planos</strong></h5>
+                    <h2>Planos para todos segmentos</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div class="pb_pricing_v1 p-5 border text-center bg-white">
+                        <h3>Nacional</h3>
+                        <!-- Comentado os valores, Opção do Ubiraci, caso mudem de ideia, só retirar o comentário e remover o icones
+                            <small class="front_price">A partir de</small>
+                        <span class="price"><sup>R$</sup>79,90<span>mês</span></span> -->
+                        <div class="pb_icon align-items-center">
+                            <img src="./assets/icons/brazil.svg" alt="brasil">
+                        </div>
+                        <p class="pb_font-15">É a maneira inteligente de proteger você e sua família, acompanhe seu
+                            veiculo, e aumente a segurança familiar obtenha, serviço online 24 horas por
+                            dia, com cobertura em todo território brasileiro.</p>
+                        <p class="mb-0"><a href="#section_joinus" role="button"
+                                class="btn btn-secondary smoothscroll">Saber mais</a></p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="pb_pricing_v1 p-5 border border-primary text-center bg-white">
+                        <h3>Mercosul</h3>
+                        <!-- <small class="front_price">A partir de</small>
+                        <span class="price"><sup>R$</sup>99,90<span>mês</span></span> -->
+                        <div class="pb_icon align-items-center">
+                            <img src="./assets/icons/south-america2.svg" alt="america do sul">
+                        </div>
+                        <p class="pb_font-15">Obtenha o rastreamento para sua frota, ou veiculo particular, com
+                            cobertura no Mercosul. Ofereça mais segurança para seus clientes, e obtenha melhores ofertas
+                            de fretes internacionais.</p>
+                        <p class="mb-0"><a href="#section_joinus" role="button"
+                                class="btn btn-primary btn-shadow-blue smoothscroll">Saber mais</a></p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="pb_pricing_v1 p-5 border text-center bg-white">
+                        <h3>Gestão total</h3>
+                        <!-- <small class="front_price">A partir de</small>
+                        <span class="price"><sup>R$</sup>119,90<span>mês</span></span> -->
+                        <div class="pb_icon align-items-center">
+                            <img src="./assets/icons/telemetry.svg" alt="total">
+                        </div>
+                        <p class="pb_font-15">Tenha total controle sobre sua frota, com telemetria, jornada de trabalho
+                            e afins.
+                            Obtenha maiores rendimentos com baixo investimento, e retorno garantido, de onde você
+                            estiver.</p>
+                        <p class="mb-0"><a href="#section_joinus" role="button"
+                                class="btn btn-secondary smoothscroll">Saber mais</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ENDs ection -->
+
+    <section class="pb_section pb_slant-white" id="section-faq">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-6 text-center mb-5">
+                    <h5 class="text-uppercase pb_font-15 mb-2 pb_color-dark-opacity-3 pb_letter-spacing-2">
+                        <strong>Ajuda</strong></h5>
+                    <h2>Perguntas frequentes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <div id="pb_faq" class="pb_accordion" data-children=".item">
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq1" aria-expanded="true"
+                                aria-controls="pb_faq1" class="pb_font-22 py-4">Como funciona o rastreador?</a>
+                            <div id="pb_faq1" class="collapse show" role="tabpanel">
+                                <div class="py-3">
+                                    <p>O rastreador veicular funciona via GPRS, que envia os sinais captados pelo GPS à
+                                        central de rastreamento SOMAR e para o aparelho do cliente, seja web ou App e
+                                        assim fornece informações em tempo real de seu veículo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq2" aria-expanded="false"
+                                aria-controls="pb_faq2" class="pb_font-22 py-4">Qual a área de cobertura do rastreador
+                                veicular?</a>
+                            <div id="pb_faq2" class="collapse" role="tabpanel">
+                                <div class="py-3">
+                                    <p>Nossos rastreadores cobrem todo o território nacional, além de todos países do
+                                        Mercosul, desde que haja cobertura GPRS/GPS, você terá informações de seu
+                                        veículo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq3" aria-expanded="false"
+                                aria-controls="pb_faq3" class="pb_font-22 py-4">Qual a vantagem de se usar o equipamento
+                                em plano de comodato?</a>
+                            <div id="pb_faq3" class="collapse" role="tabpanel">
+                                <div class="py-3">
+                                    <p>Optamos por oferecer todos nossos planos em comodato, para facilitar a vida dos
+                                        clientes, afinal, caso seja necessário qualquer tipo de manutenção
+                                        que não seja por mal uso, não terá custo adicional nenhum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq4" aria-expanded="false"
+                                aria-controls="pb_faq4" class="pb_font-22 py-4">O equipamento pode ser instalado de
+                                forma sigilosa?</a>
+                            <div id="pb_faq4" class="collapse" role="tabpanel">
+                                <div class="py-3">
+                                    <p>Por se tratar de um equipamento com dimensões muito reduzidas, suas instalações
+                                        são possíveis nos mais diversos modelos de veículo e de forma sigilosa, caso
+                                        seja o desejo do cliente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <a data-toggle="collapse" data-parent="#pb_faq" href="#pb_faq5" aria-expanded="false"
+                                aria-controls="pb_faq5" class="pb_font-22 py-4">Qual a importância de ter o meu veículo
+                                rastreado?</a>
+                            <div id="pb_faq5" class="collapse" role="tabpanel">
+                                <div class="py-3">
+                                    <p>Com rastreador instalado em seu carro você tem a oportunidade de acompanhar e
+                                        monitorar o trajeto do veículo, seja familiar ou empresarial. Fornecendo
+                                        informações em tempo real sobre trajetos
+                                        percorridos, possibilitando a checagem de entregas e percursos e deslocamento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_joinus"
+        class="pb_cover_v3 cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-5 justify-content-center">
+                    <h2 id="form_title" class="heading mb-5">Junte-se a nós, e tenha o controle em suas mãos</h2>
+                    <div class="sub-heading">
+                        <p class="mb-4">Tenha nossa solução completa em segurança, telemetria e restreamento veicular,
+                            para sua empresa ou família. Não importa se você tem uma moto, um carro ou uma frota, nós
+                            temos o plano perfeito para você.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <form method="POST" class="bg-white rounded pb_form_v1" action="./assets/mail.php">
+                        <h2 class="mb-4 mt-0 text-center">Gostou? Escolha seu plano!</h2>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control py-3 reverse" placeholder="Nome completo"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control py-3 reverse" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input id="celular" type="text" name="fone" class="form-control py-3 reverse"
+                                placeholder="Telefone">
+                        </div>
+                        <div class="form-group">
+                            <div class="pb_select-wrap">
+                                <select name="select" class="form-control pb_height-50 reverse">
+                                    <option value="" selected>Plano</option>
+                                    <option value="Basico">Básico</option>
+                                    <option value="Mercosul">Mercosul</option>
+                                    <option value="Total">Gestão Total</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-lg btn-block pb_btn-pill  btn-shadow-blue"
+                                value="Saber mais!">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
+
+    <section class="pb_footer bg-light" role="contentinfo" id="section_contact">
+        <div class="container">
+            <div class="row col-md-12">
+                <div class="col-md-6">
+                    <div class="col text-center">
+                        <div class="row justify-content-center">
+                            <h2>Nossos contatos</h2>
+                            <img src="./assets/icons/contact-us.svg" width="35px" height="35px" alt="contatos"
+                                style="margin-left: 15px;">
+                        </div>
+                        <p class="text-left text-primary">
+                            <a href="https://www.facebook.com/SomarRastreamento" class="p-2">
+                                <img class="contact_icon" src="./assets/icons/facebook.svg" alt="facebook">Pagina
+                                Oficial
+                            </a>
+                        </p>
+                        <p class="text-left p-2 text-primary">
+                            <img class="contact_icon" src="./assets/icons/018-telephone.svg" alt="telefone">
+                            (55)3430-1175
+                        </p>
+                        <p class="text-left p-2 text-primary">
+                            <img class="contact_icon" src="./assets/icons/028-phone-2.svg" alt="celular">
+                            (55)99975-3015 / (55)99963-2164
+                        </p>
+                        <p class="text-left p-2 text-primary">
+                            <img class="contact_icon" src="./assets/icons/038-email-2.svg" alt="Email">
+                            faleconosco@somarrastreamento.com.br
+                        </p>
+                        <p class="text-left p-2 text-primary">
+                            <img class="contact_icon" src="./assets/icons/015-mail.svg" alt="Email">
+                            somarrastreamento@gmail.com
+                        </p>
+                        <p class="text-left p-2 text-primary">
+                            <img class="contact_icon" src="./assets/icons/021-placeholder-26.svg" alt="Endereco">
+                            Rua Eng. Manuel Luís Fagundes, 1693.
+                        </p>
+                        <p class="text-left">
+                            <a href="https://wa.me/5555999169725?text=Olá" target="_blank" class="p-2">
+                                <img class="contact_icon" src="./assets/icons/037-address.svg"
+                                    alt="Enviar Mensagem via WhatsApp">Enviar Mensagem via WhatsApp (55)99916-9725
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.898479341552!2d-56.00044068483491!3d-28.662758275348807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9455c7b0cd0acdf3%3A0x542a43ba2a1255eb!2sSomar+Rastreamento+Veicular!5e0!3m2!1spt-BR!2sbr!4v1534119131043"
+                        width="540" height="320" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer class="d-flex py-4 text-white-50 col-md-12">
+        <div class="container text-center col-md-5">
+            <small>&copy; 2020 Todos os Direitos Reservados a Somar Rastreamento Veicular</small>
+        </div>
+        <div class="container text-center col-md-5">
+            <small>Desenvolvido por
+                <a href="https://www.linkedin.com/in/mauricio-saciloto-8161ba53/" target="_blank"
+                    rel="nofollow">Maurício Valadares Saciloto
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </small>
+        </div>
+        <div class="d-flex">
+            <a class="text-white-50 smoothscroll" href="#section-home"> Retornar ao início
+                <img class="pb-nav-link" src="./assets/icons/chevron.svg" width="40px" height="40px" alt="Up">
+            </a>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#1d82ff" /></svg></div>
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document
+            .querySelector('#show_button')
+            .addEventListener("click", function () {
+                document
+                    .querySelector('div#sign')
+                    .classList.toggle('hide')
+            })                    
+    </script>
+
+    <script type="text/javascript">
+        $("input#celular").mask("(00) 00000-0000");
+    </script>
+
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
