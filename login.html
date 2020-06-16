@@ -67,7 +67,10 @@
                                 </div>
 
                                 <!-- Retorna para o seu site em caso de falha no acesso -->
-                                <input type="hidden" name="backURL" value="http://www.somarrastreamento.com.br">
+                                <input  type="hidden" 
+                                        name="backURL" 
+                                        value="http://www.somarrastreamento.com.br/login.html"
+                                        onload="CapturaParametrosUrl()">
                                 <!-- Código de identificação do cliente junto a Systemsat -->
                                 <input type="hidden" name="hashCode" value="8069955316900681047">
                                 <button
@@ -106,7 +109,7 @@
                                 </div>
 
                                 <!-- Retorna para o seu site em caso de falha no acesso -->
-                                <input type="hidden" name="backURL" value="http://127.0.0.1:5500/login.html"
+                                <input type="hidden" name="backURL" value="http://www.somarrastreamento.com.br/login.html"
                                     onload="CapturaParametrosUrl()">
                                 <!-- Código de identificação do cliente junto a Systemsat -->
                                 <input type="hidden" name="hashCode" value="8069955316900681047">
@@ -150,8 +153,9 @@
 
 
                                 <input type="hidden"
-                                    value="http://www.somarrastreamento.com.br/index.php/area-do-cliente"
-                                    name="BackUrl">
+                                    value="http://www.somarrastreamento.com.br/login.html"
+                                    name="BackUrl"
+                                    onload="CapturaParametrosUrl()">
 
                                 <button
                                     class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
